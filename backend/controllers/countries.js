@@ -1,6 +1,6 @@
 const pais = require('../models/Country')
 
-const obtenerPaises = async(req, res) => {
+const obtenerPaises  = async(req, res) => {
     try {
         const paises = await pais.find()
         res.json(paises)
